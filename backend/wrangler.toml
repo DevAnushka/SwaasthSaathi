@@ -1,0 +1,13 @@
+name = "careconnect-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-18"
+
+[observability]
+enabled = true
+
+# Secrets should be set in Cloudflare dashboard or via `wrangler secret put`
+# We use local .dev.vars for local development but for now they'll be injected from env variables during deploy
+
+[vars]
+# GEMINI_API_KEY = "..."
+# DATABASE_URL = "..."
